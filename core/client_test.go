@@ -24,14 +24,14 @@ import (
 	"testing"
 	"time"
 
+	"github.com/LoveChiba/wechatpay-go/core"
+	"github.com/LoveChiba/wechatpay-go/core/auth"
+	"github.com/LoveChiba/wechatpay-go/core/auth/signers"
+	"github.com/LoveChiba/wechatpay-go/core/auth/verifiers"
+	"github.com/LoveChiba/wechatpay-go/core/option"
+	"github.com/LoveChiba/wechatpay-go/utils"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"github.com/wechatpay-apiv3/wechatpay-go/core"
-	"github.com/wechatpay-apiv3/wechatpay-go/core/auth"
-	"github.com/wechatpay-apiv3/wechatpay-go/core/auth/signers"
-	"github.com/wechatpay-apiv3/wechatpay-go/core/auth/verifiers"
-	"github.com/wechatpay-apiv3/wechatpay-go/core/option"
-	"github.com/wechatpay-apiv3/wechatpay-go/utils"
 )
 
 const (

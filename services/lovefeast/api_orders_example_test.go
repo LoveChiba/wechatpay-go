@@ -14,10 +14,10 @@ import (
 	"context"
 	"log"
 
-	"github.com/wechatpay-apiv3/wechatpay-go/core"
-	"github.com/wechatpay-apiv3/wechatpay-go/core/option"
-	"github.com/wechatpay-apiv3/wechatpay-go/services/lovefeast"
-	"github.com/wechatpay-apiv3/wechatpay-go/utils"
+	"github.com/LoveChiba/wechatpay-go/core"
+	"github.com/LoveChiba/wechatpay-go/core/option"
+	"github.com/LoveChiba/wechatpay-go/services/lovefeast"
+	"github.com/LoveChiba/wechatpay-go/utils"
 )
 
 func ExampleOrdersApiService_GetByUser() {

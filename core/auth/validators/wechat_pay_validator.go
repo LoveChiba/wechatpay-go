@@ -11,8 +11,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/wechatpay-apiv3/wechatpay-go/core/auth"
-	"github.com/wechatpay-apiv3/wechatpay-go/core/consts"
+	"github.com/LoveChiba/wechatpay-go/core/auth"
+	"github.com/LoveChiba/wechatpay-go/core/consts"
 )
 
 type wechatPayValidator struct {
@@ -105,7 +105,7 @@ func getWechatPayHeader(ctx context.Context, header http.Header) (wechatPayHeade
 // checkWechatPayHeader 对 wechatPayHeader 内容进行检查，看是否符合要求
 //
 // 检查项：
-//  - Timestamp 与当前时间之差不得超过 FiveMinute;
+//   - Timestamp 与当前时间之差不得超过 FiveMinute;
 func checkWechatPayHeader(ctx context.Context, args wechatPayHeader) error {
 	// Suppressing warnings
 	_ = ctx

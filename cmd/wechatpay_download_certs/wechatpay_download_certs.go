@@ -10,10 +10,10 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/wechatpay-apiv3/wechatpay-go/core"
-	"github.com/wechatpay-apiv3/wechatpay-go/core/downloader"
-	"github.com/wechatpay-apiv3/wechatpay-go/core/option"
-	"github.com/wechatpay-apiv3/wechatpay-go/utils"
+	"github.com/LoveChiba/wechatpay-go/core"
+	"github.com/LoveChiba/wechatpay-go/core/downloader"
+	"github.com/LoveChiba/wechatpay-go/core/option"
+	"github.com/LoveChiba/wechatpay-go/utils"
 )
 
 var (

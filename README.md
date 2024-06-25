@@ -1,7 +1,7 @@
 # 微信支付 API v3 Go SDK
-[![GoDoc](http://img.shields.io/badge/godoc-reference-blue.svg)](https://pkg.go.dev/github.com/wechatpay-apiv3/wechatpay-go)
+[![GoDoc](http://img.shields.io/badge/godoc-reference-blue.svg)](https://pkg.go.dev/github.com/LoveChiba/wechatpay-go)
 [![huntr](https://cdn.huntr.dev/huntr_security_badge_mono.svg)](https://huntr.dev)
-[![licence](https://badgen.net/github/license/wechatpay-apiv3/wechatpay-go)](https://github.com/wechatpay-apiv3/wechatpay-go/blob/main/LICENSE)
+[![licence](https://badgen.net/github/license/wechatpay-apiv3/wechatpay-go)](https://github.com/LoveChiba/wechatpay-go/blob/main/LICENSE)
 
 [微信支付 APIv3](https://wechatpay-api.gitbook.io/wechatpay-api-v3/) 官方Go语言客户端代码库。
 
@@ -30,7 +30,7 @@ go mod init
 
 #### 2、无需 clone 仓库中的代码，直接在项目目录中执行： 
 ```shell
-go get -u github.com/wechatpay-apiv3/wechatpay-go
+go get -u github.com/LoveChiba/wechatpay-go
 ```
 来添加依赖，完成 `go.mod` 修改与 SDK 下载。
 
@@ -45,10 +45,10 @@ import (
 	"context"
 	"log"
 
-	"github.com/wechatpay-apiv3/wechatpay-go/core"
-	"github.com/wechatpay-apiv3/wechatpay-go/core/option"
-	"github.com/wechatpay-apiv3/wechatpay-go/services/certificates"
-	"github.com/wechatpay-apiv3/wechatpay-go/utils"
+	"github.com/LoveChiba/wechatpay-go/core"
+	"github.com/LoveChiba/wechatpay-go/core/option"
+	"github.com/LoveChiba/wechatpay-go/services/certificates"
+	"github.com/LoveChiba/wechatpay-go/utils"
 )
 
 func main() {
@@ -102,7 +102,7 @@ func main() {
 ```go
 import (
 	"log"
-	"github.com/wechatpay-apiv3/wechatpay-go/services/payments/jsapi"
+	"github.com/LoveChiba/wechatpay-go/services/payments/jsapi"
 )
 
 svc := jsapi.JsapiApiService{Client: client}
@@ -136,7 +136,7 @@ if err == nil {
 ```go
 import (
 	"log"
-	"github.com/wechatpay-apiv3/wechatpay-go/services/payments/jsapi"
+	"github.com/LoveChiba/wechatpay-go/services/payments/jsapi"
 )
 
 svc := jsapi.JsapiApiService{Client: client}
@@ -160,9 +160,9 @@ if err == nil {
 ```go
 import (
 	"os"
-	"github.com/wechatpay-apiv3/wechatpay-go/core"
-	"github.com/wechatpay-apiv3/wechatpay-go/core/consts"
-	"github.com/wechatpay-apiv3/wechatpay-go/services/fileuploader"
+	"github.com/LoveChiba/wechatpay-go/core"
+	"github.com/LoveChiba/wechatpay-go/core/consts"
+	"github.com/LoveChiba/wechatpay-go/services/fileuploader"
 )
 
 file, err := os.Open("resource/demo.jpg")
@@ -430,10 +430,10 @@ import (
 	"path/to/your/custom_signer"
 	"path/to/your/custom_verifier"
 
-	"github.com/wechatpay-apiv3/wechatpay-go/core"
-	"github.com/wechatpay-apiv3/wechatpay-go/core/auth/credentials"
-	"github.com/wechatpay-apiv3/wechatpay-go/core/auth/validators"
-	"github.com/wechatpay-apiv3/wechatpay-go/core/option"
+	"github.com/LoveChiba/wechatpay-go/core"
+	"github.com/LoveChiba/wechatpay-go/core/auth/credentials"
+	"github.com/LoveChiba/wechatpay-go/core/auth/validators"
+	"github.com/LoveChiba/wechatpay-go/core/option"
 )
 
 func NewCustomClient(ctx context.Context, mchID string) (*core.Client, error) {
@@ -466,7 +466,7 @@ func NewCustomClient(ctx context.Context, mchID string) (*core.Client, error) {
 - 通过代码或者其他方式，简要的说明是如何实现的，或者它会是如何使用
 - 是否影响现有的接口
 
-[#35](https://github.com/wechatpay-apiv3/wechatpay-go/issues/35) 是一个很好的参考。
+[#35](https://github.com/LoveChiba/wechatpay-go/issues/35) 是一个很好的参考。
 
 ### 测试
 
@@ -485,7 +485,7 @@ go test -gcflags=all=-l ./...
 ```
 
 ## 联系微信支付
-如果你发现了 BUG，或者需要的功能还未支持，或者有任何疑问、建议，欢迎通过 [issue](https://github.com/wechatpay-apiv3/wechatpay-go/issues) 反馈。
+如果你发现了 BUG，或者需要的功能还未支持，或者有任何疑问、建议，欢迎通过 [issue](https://github.com/LoveChiba/wechatpay-go/issues) 反馈。
 
 也欢迎访问微信支付的 [开发者社区](https://developers.weixin.qq.com/community/pay)。
 
